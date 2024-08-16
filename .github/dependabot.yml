@@ -1,0 +1,52 @@
+version: 2
+updates:
+- package-ecosystem: "npm"
+  directory: "/"
+  schedule:
+    interval: "daily"
+  groups:
+    all:
+      patterns:
+      - "*"
+  ignore:
+  - dependency-name: "eslint"
+    versions: [">= 9.0.0"]
+  versioning-strategy: auto
+  assignees:
+  - "iamlite"
+
+- package-ecosystem: "npm"
+  directory: "/packages/color-core"
+  schedule:
+    interval: "daily"
+  groups:
+    all:
+      patterns:
+      - "*"
+  versioning-strategy: auto
+  assignees:
+  - "iamlite"
+
+- package-ecosystem: "npm"
+  directory: "/packages/website"
+  schedule:
+    interval: "weekly"
+  groups:
+    all:
+      patterns:
+      - "*"
+  versioning-strategy: auto
+  assignees:
+  - "iamlite"
+
+- package-ecosystem: "npm"
+  directory: "/packages/docs"
+  schedule:
+    interval: "weekly"
+  groups:
+    all:
+      patterns:
+      - "*"
+  versioning-strategy: auto
+  assignees:
+  - "iamlite"

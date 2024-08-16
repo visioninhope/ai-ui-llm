@@ -1,0 +1,30 @@
+{
+  "name": "ai-ui",
+  "version": "1.0.0",
+  "workspaces": {
+    "packages": [
+      "packages/ui",
+      "packages/artifacts"
+    ]
+  },
+  "scripts": {
+    "dev": "yarn conc \"yarn workspace aiui dev --port 3000\" \"yarn workspace artifacts-renderer dev --port 3001\"",
+    "conc": "concurrently",
+    "cf": "yarn workspace aiui cf",
+    "uilint": "yarn workspace aiui lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamlite/ai-ui.git"
+  },
+  "packageManager": "yarn@4.3.1",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.1"
+  }
+}
