@@ -2,7 +2,7 @@
 
 A pretty nice UI for AI. Still very much a work in progress.
 
-> **Alert:** There is no DB files in this repo. You need to set up a supabase instance manually if you want to use this. I will fix this soon.
+> **Alert:** There is no DB files in this repo yet. You need to set up a supabase instance manually if you want to use this. I will fix that soon.
 
 ![alt](gif.gif)
 
