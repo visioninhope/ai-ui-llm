@@ -22,7 +22,7 @@ const allCapabilities = [
     title: 'Code Assistance',
     description: 'Get help with coding and debugging',
     example:
-      'Make me a one page personal website demo with dummy data using react.\nUse framer motion and tailwind to make it look nice and animated.\nUse shadcn UI components and lucide-react icons.'
+      'Create a one-page personal website demo using React. Make sure it includes dummy data. Incorporate Framer Motion for animations and Tailwind CSS for styling. Use Shadcn UI components for a unique look and Lucide-React icons for iconography. Make sure to include a splash of color and a responsive design for a modern and engaging user experience.'
   },
   {
     icon: <Code className='w-5 h-5' />,
